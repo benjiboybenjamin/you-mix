@@ -1,0 +1,37 @@
+body {font-family: calibri; font-size: 14px; color: #7295bb;}
+
+#tabs {width: 600px;}
+.tabsContent {font-family: calibri; font-size: 14px; color: black;}
+
+#MixesTable {width: 575px;}
+.mixListTD {padding: 0 0; text-align: left;}
+.mixIdTD {}
+.mixNameTD {}
+.mixOwnerTD {}
+.mixPublishedTD {}
+.mixLoadedTD {}
+
+#news {width: 575px; text-align: center;}
+#newsHeader {font-size: 18px; font-family: Point Sample; font-weight: bold;}
+.newsPostTable {table-layout: fixed; overflow: hidden; width: 100%; margin-bottom: 5px; background-color: #ededed;}
+.newsIdtd {display: none;}
+.newsTitletd {width: 140px; text-align: left; font-family: Arial; font-size: 11px; font-weight: bold;}
+.newsTimetd {width: 105px; font-family: Arial; font-size: 11px; text-align: right; font-weight: bold;}
+.newsMessagetd {text-align: left; font-size: 14px;}
+#newsMessage {width: 350px;}
+#messageLabeltd {vertical-align: top;}
+
+.editPostTable {width: 100%; margin-bottom: 5px; background-color: #ededed;}
+.editIdtd {display: none;}
+.editTitletd {width: 140px; text-align: left; font-family: Arial; font-size: 11px; font-weight: bold;}
+.editTimetd {width: 105px; font-family: Arial; font-size: 11px; text-align: right; font-weight: bold;}
+.editMessagetd {text-align: left; font-size: 11px;}
+.editMessage {width: 370px;}
+.editNewsPosttd {width: 70px; text-align: right;}
+.saveNewsPosttd {width: 70px; text-align: right;}
+.cancelNewsPosttd {width: 85px;}
+.deleteNewsPosttd {width: 85px;}
+
+.userListTD {padding: 0 10px; text-align: left; vertical-align: top;}
+.userListMTD {width: 220px; padding: 0 10px; text-align: left;}
+.userListDTTD {width: 155px; padding: 0 10px; text-align: left;}

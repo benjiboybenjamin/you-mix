@@ -1,0 +1,147 @@
+/* LARGE SCREEN*/
+#largeLogin {
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+	#largeLogin {
+		display: none;
+		margin-top: 100px;
+	}
+}
+
+#menu > li > a:hover {
+	color: #d6b37c;
+}
+
+#resend_password_link {
+	font-size: 14px;
+}
+
+#loginMessageWrapper {
+	font-size: 14px;
+	height: 40px;
+	color: red;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#signupPage .form-control {
+	display: inline;
+	width: 200px;
+}
+.signupLabel {
+	width: 150px;
+}
+
+@media (max-width: 1000px) {
+	#largeLogin {
+		font-size: 14px;
+	}
+}
+
+#termsForSignup {
+	overflow-y: scroll;
+	max-height: 300px;
+
+}
+
+#agree {
+	margin-left: 10px;
+}
+.labeltd {
+	padding: 10px;
+}
+#signupMessage {
+	color: red;
+}
+
+/* SMALL SCREEN*/
+#loginMessageWrapperSmall {
+	color: red;
+}
+#smallLogin {
+	display: none;
+	margin: 0;
+}
+#loginMenuHeader {
+	display: none;
+}
+#menuSeparator {
+	display: none;
+}
+#userDisplayWrapper {
+	display: none;
+}
+.logoutContainerSmall {
+	display: none;
+}
+@media (max-width: 768px) {
+	#userDisplayWrapper {
+		display: block;
+	}
+	#smallLogin {
+		display: block;
+		margin-left: 20px;
+	}
+	.logoutContainerSmall {
+		display: block;
+		margin: 5px 0 5px 15px;
+	}
+	.logoutContainerSmall a {
+		color: #3d3d3d;
+	}
+	.logoutContainerSmall a:hover {
+		color: #d6b37c;
+		text-decoration: none;
+	}
+	.logoutContainerSmall {
+		display: block;
+		margin: 5px 0 5px 15px;
+	}
+	#loginMenuHeader {
+		display: block;
+	}
+	#logmenheader {
+		margin-left: 15px;
+		margin-bottom: 5px;
+		color: #5e5e5e;
+	}
+	#menuSeparator {
+		display: block;
+		
+	}
+	#separator {
+		width: 350px;
+		margin-bottom: 10px;
+		border-bottom: #ededed inset 3px;
+	}
+	#userSmall {
+		width: 250px;
+	}
+	#passwordSmall {
+		width: 250px;
+	}
+	.loginButtonSmall {
+		display: inline;
+	}
+	.chkRememberSmall {
+		display: inline;
+		margin-left: 35px;
+	}
+	#signupWrapperSmall {
+		display: inline;
+	}
+	#resendWrapperSmall {
+		display: inline;
+		margin-left: 20px;
+	}
+	#termsForSignup {
+		max-height: 125px;
+	}
+	#termsForSignup	> h1 {font-size: 18px;}
+	#termsForSignup	> h2 {font-size: 16px;}
+	#termsForSignup > p {font-size: 12px;}
+}

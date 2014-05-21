@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>YouMix: Create YouTube Video Playlists</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="description" content="Create your own Video Playlist with YouTube videos. Great for parties, social events and the Power Hour game."/>
+		<meta name="keywords" content="playlist, youtube, power, hour, drinking, game, mixes, music, videos, play power hour drinking game"/>
+		<link rel='stylesheet' type='text/css' href='masterPage/main.css'/>
+	</head>
+	<body>
+		<div id='page' class='container'>
+			<div class='col-xs-12 col-sm-5'>
+				<h1 id='title'>YouMix</h1>
+				<p id='titleMessage'>Create your own <a href='http://youtube.com'>YouTube</a> video playlist</p>
+			</div>
+			<div id='largeLogin'>
+				<div id='loginContainer' class='col-xs-12 col-sm-7'></div>
+			</div>
+			<div id='nav' class='col-xs-12 navbar navbar-default navbar-absolute'>
+				<div class='container-fluid'>
+					<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				      <span class="sr-only">Toggle navigation</span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				    </button>
+				    <a class="navbar-brand" href="">YouMix</a>
+				  	</div>
+				  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul id='menu' class='nav navbar-nav'>
+							<li><a class='menupage closeonclick' href=''>Choose Mix</a></li>
+							<li><a id='signup' class='menupage closeonclick' href=''>Sign Up</a></li>
+							<li id='menuSeparator'><p class='loginMenuVisibility' id='separator'></p></li>
+							<li id='loginMenuHeader'><p class='loginMenuVisibility' id='logmenheader'>Login</p></li>
+							<li>
+								<div id='smallLogin'>
+								  <div id='loginContainerSmall'>
+									<p class='username'><input placeholder='Username' id='userSmall' name='username' value='' title='username' tabindex='4' maxlength='40' type='text' onkeypress="return enterFuncSmall(event)" class='form-control'/></p>
+									<p class='password'><input placeholder='Password' id='passwordSmall' name='password' value='' title='password' tabindex='5' type='password' maxlength='10' onkeypress="return enterFuncSmall(event)" class='form-control'/></p>
+									<p id='loginMessageWrapperSmall'><span id='loginmessageSmall'></span></p>
+									<p class='loginButtonSmall'><a href='' tabindex='7' id='loginbuttonSmall'>Login</a></p>
+									<p class='chkRememberSmall'><input id='chkRemember' name='remember_me' value='1' tabindex='6' type='checkbox'> <label>Remember me</label></p>
+									<div>
+										<p id='resendWrapperSmall'><a class='closeonclick' href='' id='resend_password_link'>Forgot username/password?</a></p>
+									</div>
+								  </div>
+								</div>
+							</li>
+							<li><a class='menupage closeonclick menuVisibilty' href=''>My Mixes</a></li>
+							<li><a class='menupage closeonclick menuVisibilty' href=''>Create Mix</a></li>
+							<li><a class='menupage closeonclick menuVisibilty' href=''>Update Mix</a></li>
+							<li><p class='logoutContainerSmall'><a class='closeonclick' id='logoutMenuButton' href=''>Log out</a></p></li>
+						</ul>
+				  	</div>
+				</div>
+			</div>
+			<div id='main' class='col-xs-12'>
+				<div id='userDisplayWrapper'><div id='userDisplay'></div></div>
+				<div id='content' class='col-xs-12 col-sm-4'></div>
+				<div id='other' class='col-xs-12 col-sm-8'></div>
+				<div id='signupPage' class='col-xs-12'></div>
+				<div id='setupMix' class='col-xs-12'></div>
+				<div id='screenWrapper' class='col-xs-12 col-sm-8'>
+					<div id='blackScreen' class='col-xs-12'>
+						<p> 
+							Welcome to YouMix.  The website that plays streamed video playlists created by YOU!
+						</p>
+						<p>
+							Select a published mix from the drop down or create your own.
+						</p>
+						<p>
+							Great tool for making Power Hour mixes.
+						</p>
+					</div>
+					<div id='queryBlackScreen' class='invisible col-xs-12'>
+						<p> 
+							Welcome to YouMix.  The website that plays streamed video playlists created by YOU!
+						</p>
+						<p>
+							Click Start to begin playing this mix.
+						</p>
+					</div>
+					<p class='col-xs-12' id='mobileViewerMessage'><b>IOS autoload blocked: </b> Tap screen to enable viewer, then click <a id='reloadVideoForMobile' href=''>HERE</a>.</p>
+					<div id='playerWrapper' class='col-xs-12'><div id='player' class='col-xs-12'></div></div>
+				</div>
+			</div>
+			<div id='footer' class='col-xs-12'>
+				<footer>
+					<p>seh264@gmail.com | <a id='termsLink' href='' class='linkbutton'>Terms</a> | <a id='privacyLink' href='' class='linkbutton'>Privacy</a></p>
+				</footer>
+			</div>
+		</div>
+		<script src="masterPage/jquery.min.js" type="text/javascript"></script>
+		<script src="masterPage/bootstrap.min.js" type="text/javascript"></script>
+		<script src="base/Login/jquery.jcryption-1.1.js" type="text/javascript"></script>
+		<script src="base/Login/jquery.cookie.js" type="text/javascript"></script>
+		<script src="masterPage/main.js" type="text/javascript"></script>
+	</body>
+</html>
