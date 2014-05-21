@@ -15,12 +15,12 @@ $_env = 'local';
 			}
 			else
 			{
-				return 'mysql://seh264:obvious@mysql.you-mix.com/youmixdb';
+				return 'mysql://removed:removed@mysql.you-mix.com/youmixdb';
 			}
 		}
 
 		public function getSMTPPass() {
-			return 'Obviously1##';
+			return 'removed';
 		}
 
 		public function getUserManagerDomain() {
@@ -35,7 +35,7 @@ $_env = 'local';
 		}
 
 		public function getUserManagerPass() {
-			return 'obvious';
+			return 'removed';
 		}
 
 
