@@ -49,7 +49,8 @@ function getPassword($fEmail, $sqlconn) {
 		$body             = preg_replace('/\\\\/','', $body); //Strip backslashes
 	
 		$mail->IsSMTP(); // telling the class to use SMTP
-		$mail->Host       = "mail.you-mix.com"; // SMTP server
+		//$mail->Host       = "mail.you-mix.com"; // SMTP server
+		$mail->Host 		= "smtp.sendgrid.net";
 		//$mail->Host       = "smtp.mail.me.com"; // SMTP server
 		$mail->SMTPDebug  = 1;                     // enables SMTP debug information (for testing)
 		                                           // 1 = errors and messages
@@ -57,13 +58,13 @@ function getPassword($fEmail, $sqlconn) {
 		$mail->SMTPAuth   = true;                  // enable SMTP authentication
 		$mail->Port       = 25;                    // set the SMTP server port
 		//$mail->Port       = 587;                    // set the SMTP server port
-		$mail->Username   = "admin@you-mix.com";     // SMTP server username
+		$mail->Username   = "seh264";    // SMTP server username
 		//$mail->Username   = "seh264@gmail.com";     // SMTP server username
 		$config = new config();
 		$mail->Password   = $config->getSMTPPass();             // SMTP server password
 	
 		
-		$mail->AddReplyTo("admin@you-mix.com","YouMix");
+		$mail->AddReplyTo("seh264@gmail.com.com","YouMix");
 		
 		$mail->From       = "admin@you-mix.com";
 		$mail->FromName   = "YouMix";

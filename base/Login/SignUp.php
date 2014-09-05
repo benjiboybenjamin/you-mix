@@ -45,18 +45,20 @@ try {
 		$body             = preg_replace('/\\\\/','', $body); //Strip backslashes
 	
 		$mail->IsSMTP(); // telling the class to use SMTP
-		$mail->Host       = "mail.you-mix.com"; // SMTP server
+		//$mail->Host       = "mail.you-mix.com"; // SMTP server
+		$mail->Host 		= "smtp.sendgrid.net";
 		$mail->SMTPDebug  = 1;                     // enables SMTP debug information (for testing)
 		                                           // 1 = errors and messages
 		                                           // 2 = messages only                           // tell the class to use SMTP
 		$mail->SMTPAuth   = true;                  // enable SMTP authentication
 		$mail->Port       = 25;                    // set the SMTP server port
-		$mail->Username   = "admin@you-mix.com";     // SMTP server username
+		//$mail->Username   = "admin@you-mix.com";     // SMTP server username
+		$mail->Username   = "seh264";
 		$config = new config();
 		$mail->Password   = $config->getSMTPPass();            // SMTP server password
 	
 		
-		$mail->AddReplyTo("admin@you-mix.com","YouMix");
+		$mail->AddReplyTo("seh264@gmail.com.com","YouMix");
 		
 		$mail->From       = "admin@you-mix.com";
 		$mail->FromName   = "YouMix";

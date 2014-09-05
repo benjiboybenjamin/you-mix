@@ -19,7 +19,7 @@
 		
 		//saving connection to variable
 		$config = new config();
-		$con = mysql_connect($config->getUserManagerDomain(), 'seh264', $config->getUserManagerPass());
+		$con = mysql_connect($config->getUserManagerDomain(), $config->getUserManagerUser(), $config->getUserManagerPass());
 
 		//checking to see if connection exists
 		if(!$con)
@@ -28,7 +28,7 @@
 		}
 		
 		//connect to database
-		mysql_select_db("youmixdb", $con);
+		mysql_select_db($config->getUserManagerDB(), $con);
 		
 		//querying the table and setting it to a variable
 		$result = mysql_query("SELECT * FROM UserInfo WHERE Email = '$user'");
